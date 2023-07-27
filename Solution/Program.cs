@@ -12,13 +12,19 @@ string[] ReadToArray(string text)
 }
 
 
-
-
-
-
 string[] ConvertForTask(string[] array, int maxLength = 3)
 {
     string[] newArray = new string[0];
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i].Length <= maxLength )
+    {
+        Array.Resize(ref newArray, newArray.Length + 1);
+        newArray[newArray.Length - 1] = array[i];
+    }
+
+}
+return newArray;
 }
 
 
