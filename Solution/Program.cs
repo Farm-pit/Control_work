@@ -28,11 +28,11 @@ return newArray;
 }
 
 
-
-
 void Main()
 {
     string[] userArray = ReadToArray("Ведите массив слов через пробел: ");
+    Console.WriteLine(string.Join(", ", userArray));
+
+    System.Console.WriteLine(string.Join(", ", ConvertForTask(userArray)));
 }
 Main();
-
