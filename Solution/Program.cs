@@ -10,3 +10,11 @@ string[] ReadToArray(string text)
     string[] array = Console.ReadLine()!.Split().ToArray();
     return array;
 }
+
+
+void Main()
+{
+    string[] userArray = ReadToArray("Ведите массив слов через пробел: ");
+  
+}
+Main();
