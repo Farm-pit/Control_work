@@ -12,9 +12,21 @@ string[] ReadToArray(string text)
 }
 
 
+
+
+
+
+string[] ConvertForTask(string[] array, int maxLength = 3)
+{
+    string[] newArray = new string[0];
+}
+
+
+
+
 void Main()
 {
     string[] userArray = ReadToArray("Ведите массив слов через пробел: ");
-  
 }
 Main();
+
